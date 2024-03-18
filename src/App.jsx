@@ -38,7 +38,7 @@ function App() {
         <Route path='/admin' element={<ProtectedAdmin><Dashboard/></ProtectedAdmin>}>
               <Route path='addproduct' element={<AddProduct/>}/>
               <Route path='viewproducts' element={<ViewProducts/>}/>
-              {/* <Route path='editproduct/:id' element={<AddProduct/>}/> */}
+              <Route path='editproduct/:id' element={<AddProduct/>}/>
         </Route>
 
         <Route path='/cart' element={<Protected><Cart/></Protected>}/>
